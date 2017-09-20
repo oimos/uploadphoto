@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+</head>
+
+
+<div class="c-rvwPostForm__single">
+                                    <div class="c-rvwPostForm__left">
+                                        <div class="c-rvwPostFormLabel">
+                                            <span class="c-rvwPostFormLabel__flag">
+                                                <span class="front">任意</span>
+                                            </span>
+                                            <span class="c-rvwPostFormLabel__text">商品の画像を<br>投稿</span>
+                                        </div>
+                                    </div>
+                                    <div class="c-rvwPostForm__right clearfix">
+                                        <div class="c-rvwPostForm__textInput">
+                                            <input type="file" name="media_file" id="input_photo" class="c-rvwPostForm__fileInput" size="50" multiple="">
+                                            <button class="c-rvwPostForm__fileInputBtn"><span class="icon icon__folder"></span>select file</button>
+                                        </div>
+                                        <div class="c-rvwPostForm__uploadedImg">
+                                            <script type="text/html" id="uploadPhotoTemp">
+                                                <div class="c-rvwPostForm__uploadedImgWrapper">
+                                                    <img src="<%= img %>">
+                                                </div>
+                                            </script>
+                                            <div id="userInfo"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+<script src="https://cdn.jsdelivr.net/lodash/3.10.1/lodash.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+
